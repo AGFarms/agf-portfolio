@@ -14,6 +14,13 @@
     "technologies": []
   },
   {
+    "name": "PUQ City",
+    "description": "Digital City for the Future",
+    "url": "https://puq.city",
+    "image": "images/puqcity.png",
+    "technologies": []
+  },
+  {
     "name": "Tasklapp",
     "description": "Transform ordinary task management into a competitive experience",
     "url": "https://taskl.app",
