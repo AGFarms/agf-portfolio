@@ -602,6 +602,13 @@ body.dark-theme .project-title {
   flex-grow: 1;
 }
 
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
 .project-link {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -611,11 +618,20 @@ body.dark-theme .project-title {
   border-radius: 4px;
   transition: var(--transition);
   text-align: center;
-  margin-top: auto;
+  flex: 1;
+  min-width: 120px;
 }
 
 .project-link:hover {
   background-color: #2980b9;
+}
+
+.website-link {
+  background-color: var(--primary-color);
+}
+
+.website-link:hover {
+  background-color: #1a252f;
 }
 
 .modal {

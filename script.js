@@ -244,6 +244,9 @@ function createProjectCard(project) {
     infoSection.appendChild(description);
   }
   
+  const linksContainer = document.createElement('div');
+  linksContainer.className = 'project-links';
+  
   const link = document.createElement('a');
   link.className = 'project-link';
   link.href = '#';
@@ -253,7 +256,16 @@ function createProjectCard(project) {
     openProjectModal(project);
   });
   
-  infoSection.appendChild(link);
+  const websiteLink = document.createElement('a');
+  websiteLink.className = 'project-link website-link';
+  websiteLink.href = project.url;
+  websiteLink.target = '_blank';
+  websiteLink.rel = 'noopener noreferrer';
+  websiteLink.textContent = 'Visit Website';
+  
+  linksContainer.appendChild(link);
+  linksContainer.appendChild(websiteLink);
+  infoSection.appendChild(linksContainer);
   
   card.appendChild(previewSection);
   card.appendChild(infoSection);
